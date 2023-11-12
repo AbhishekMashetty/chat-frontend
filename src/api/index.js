@@ -1,5 +1,7 @@
 // api/index.js
-var socket = new WebSocket('ws://localhost:9000/ws');
+// Assuming your backend service name is "backend-service" and it's listening on port 9000
+var socket = new WebSocket('ws://backend-service:9000/ws');
+
 
 let connect = (cb) => {
   console.log("connecting")
